@@ -60,11 +60,41 @@ header {
   color: #ff6464;
 }
 
+.burger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  background-image: url("./images/menu.svg");
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  header {
+    margin-bottom: 45px;
+  }
+
+  .menu {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  .menu__item {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
 /* Blog page styles */
 
 .blog-page {
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .page-title {
@@ -100,4 +130,34 @@ header {
   max-width: 620px;
   margin-top: 10px;
   font-size: 16px;
+}
+
+@media (max-width: 375px) {
+  .page-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .blog-item {
+    margin-bottom: 20px;
+  }
+
+  .blog-item__title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .blog-item__date {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+
+  .blog-item__tech {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .blog-item__text {
+    margin-top: 15px;
+  }
 }
