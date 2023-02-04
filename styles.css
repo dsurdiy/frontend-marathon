@@ -1,0 +1,103 @@
+/* Common styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  color: #21243d;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+
+header {
+  margin-bottom: 100px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+.menu__item {
+  padding: 15px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.menu__item.active {
+  color: #ff6464;
+}
+
+/* Blog page styles */
+
+.blog-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-bottom: 50px;
+  font-size: 44px;
+}
+
+.blog-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.blog-item__title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.blog-item__date {
+  font-size: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #000000;
+}
+
+.blog-item__tech {
+  font-size: 20px;
+  padding-left: 20px;
+  color: #8695a4;
+}
+
+.blog-item__text {
+  max-width: 620px;
+  margin-top: 10px;
+  font-size: 16px;
+}
